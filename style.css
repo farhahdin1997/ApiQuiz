@@ -7,19 +7,64 @@ body {
   top: 20px;
   right: 40px;
   font-size: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .scores {
   position: absolute;
-  top:20px;
+  top: 20px;
   left: 30px;
   font-size: 20px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 a {
-    color: black;
-    text-decoration: none;
-    transition: color 0.1s;
-  }
+  color: black;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.startScreen {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+button {
+  display: inline-block;
+  margin: 5px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 25px;
+  background-color: rebeccapurple;
+  border-radius: 5px;
+  padding: 2px 10px;
+  color: white;
+  border: 0;
+  transition: background-color 0.1s;
+  /*text-align:center ;*/
+}
+
+button:hover {
+  background-color: mediumpurple;
+}
+
+.choices button {
+  display: block;
+}
+
+.title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+.description {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+.button{
+    text-align: center;
+}
