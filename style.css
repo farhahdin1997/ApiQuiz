@@ -1,6 +1,17 @@
+
 body {
-  font-family: "Josefin Slab", serif;
-}
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    width: 60%;
+    margin: 0 auto;
+  }
+  :root {
+    --startScreenBtn: purple;
+    --hoverColor: grey;
+    --text-color:white;
+    --headingColor:black;
+   
+  }
 
 .timer {
   position: absolute;
@@ -24,47 +35,68 @@ a {
   transition: color 0.1s;
 }
 
-.startScreen {
-  margin: 100px auto 0 auto;
-  max-width: 600px;
-}
-
-button {
-  display: inline-block;
-  margin: 5px;
-  cursor: pointer;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 25px;
-  background-color: rebeccapurple;
-  border-radius: 5px;
-  padding: 2px 10px;
-  color: white;
-  border: 0;
-  transition: background-color 0.1s;
-  /*text-align:center ;*/
-}
-
-button:hover {
-  background-color: mediumpurple;
-}
-
-.choices button {
-  display: block;
-}
-
-.title {
-  text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 40px;
-  font-weight: bold;
-
-}
-
-.description {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  text-align: center;
-}
-
-.button{
+.centered {
     text-align: center;
-}
+  }
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 25px 0;
+  }
+
+  .start-quiz {
+    text-align: center;
+ margin:90px;
+  }
+  
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  h2 {
+    color: var(--headingColor);
+    border-top: 1px solid var(--headingColor);
+    margin: 20px 0;
+    font-style: italic;
+    text-align: center;
+  }
+  
+  /* Buttons */
+  
+  button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: var(--startScreenBtn);
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--hoverColor);
+  }
+
+  /*** MEDIA QUERY FOR MOBILE PHONES AND SMALLER ***/
+/* this will be applied on any screen smaller than 575px */
+@media screen and (max-width: 575px) {
+   
+
+    .start-quiz{
+        grid-template-columns: repeat(1, auto);
+        gap: 0;
+        margin: 0;
+        padding-top: 20px;
+
+        
+    }
+  }
